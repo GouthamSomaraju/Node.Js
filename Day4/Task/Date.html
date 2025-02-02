@@ -1,0 +1,124 @@
+<!--  24-01-2025
+  Validate Date : it should accept only today date and before days date but not tomorrow date when we enter tomorrow date it should display the invalid date
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Date Validation</title>
+   <style>
+     /* General Page Styling */
+     body {
+       font-family: Arial, sans-serif;
+       background-color: #1c1c1c; /* Black background */
+       color: #f4f4f9; /* Light text color for readability */
+       margin: 0;
+       padding: 0;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 100vh;
+     }
+ 
+     /* Form Container */
+     form {
+       background-color: #333; /* Dark background for form */
+       padding: 30px;
+       border-radius: 8px;
+       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+       width: 300px;
+       text-align: center;
+     }
+ 
+     /* Form Title */
+     h2 {
+       font-size: 1.5rem;
+       margin-bottom: 20px;
+       color: #fff; /* White color for title */
+     }
+ 
+     /* Label Styling */
+     label {
+       font-size: 1rem;
+       color: #ddd; /* Light gray color for labels */
+       margin-bottom: 10px;
+       display: inline-block;
+     }
+ 
+     /* Date Input Styling */
+     input[type="date"] {
+       width: 100%;
+       padding: 10px;
+       margin-top: 10px;
+       margin-bottom: 20px;
+       border: 1px solid #ccc;
+       border-radius: 4px;
+       font-size: 1rem;
+       background-color: #444; /* Dark background for input */
+       color: #f4f4f9; /* Light text inside input */
+       box-sizing: border-box;
+     }
+ 
+     /* Submit Button Styling */
+     button {
+       background-color: #4CAF50;
+       color: white;
+       padding: 12px 20px;
+       border: none;
+       border-radius: 4px;
+       font-size: 1rem;
+       cursor: pointer;
+       transition: background-color 0.3s ease;
+     }
+ 
+     button:hover {
+       background-color: #45a049;
+     }
+ 
+     /* Alert Styling */
+     .alert {
+       margin-top: 10px;
+       font-size: 1rem;
+       font-weight: bold;
+       color: #e74c3c; /* Red color for error alerts */
+     }
+   </style>
+ </head>
+ <body>
+ 
+   <form id="dateForm">
+     <h2>Select a Date</h2>
+     <label for="slotDate">Select a Date:</label>
+     <input type="date" id="slotDate" name="slotDate" required>
+     <button type="submit">Submit</button>
+   </form>
+ 
+   <script>
+     // Get today's date in the proper format
+     const today = new Date();
+     const year = today.getFullYear();
+     const month = String(today.getMonth() + 1).padStart(2, '0'); // Month is zero-indexed
+     const day = String(today.getDate()).padStart(2, '0');
+     const maxDate = `${year}-${month}-${day}`; // Today's date in YYYY-MM-DD format
+ 
+     // Set the maximum date in the input field
+     const slotDateInput = document.getElementById('slotDate');
+     slotDateInput.max = maxDate;
+ 
+     // Handle form submission
+     const form = document.getElementById('dateForm');
+     form.addEventListener('submit', function(event) {
+       event.preventDefault(); // Prevent form submission for this demo
+ 
+       const selectedDate = slotDateInput.value;
+       if (selectedDate) {
+         alert(`You selected: ${selectedDate}`);
+       } else {
+         alert('Please select a valid date.');
+       }
+     });
+   </script>
+ 
+ </body>
+ </html>
