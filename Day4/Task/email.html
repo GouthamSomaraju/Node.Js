@@ -1,0 +1,100 @@
+<!-- 24-01-2025
+  Validate Emailm: If it ends with another words output should not valid mail id 
+
+If it ends with @gmail.com the output should be valid email
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center; /* Centers the content horizontally */
+        }
+    
+        h2 {
+            color: #333;
+        }
+    
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            display: flex;
+            flex-direction: column; /* Ensures the form elements stack vertically */
+            align-items: center; /* Centers form elements horizontally */
+        }
+    
+        label {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            text-align: left; /* Align label to the left */
+            width: 100%; /* Ensures the label takes the full width */
+        }
+    
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            box-sizing: border-box; /* Prevents overflow */
+        }
+    
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+    
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    
+        .alert {
+            margin-top: 10px;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+    
+        .valid {
+            color: #2ecc71;
+        }
+    
+        .invalid {
+            color: #e74c3c;
+        }
+    </style>
+    
+    
+    
+</head>
+<body>
+
+    <form onsubmit="event.preventDefault(); validateEmail();">
+        <h2>Email Validation</h2>
+        <label for="email">Enter your email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <input type="submit" value="Validate Email">
+    </form>
+    <script src="Email.js"></script>
+</body>
+</html>
