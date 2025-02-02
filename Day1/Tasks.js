@@ -255,8 +255,31 @@ let products=[
   console.log(array);
   
 
-  // Using Filter Method
-  let mens=products.filter((val)=>{
+
+// 21-01-2025
+//Take Fakestore API and take empty array and push all the products whose category is men's clothing Using Filter Method
+   let mens=products.filter((val)=>{
     return val.category==="men's clothing" 
   })
   console.log(mens);
+
+
+
+  // 23-01-2025
+  // Take Fakestore API and take empty array and push all the products whose categories are mentioned in separate array
+
+  let arr=["men's clothing","jewelery"]
+
+  let match=[]
+
+
+  for(i=0;i<arr.length;i++){
+    for(j=0;j<products.length;j++){
+      // console.log(products[i].category);
+      if(arr[i]==products[j].category){
+        match.push(products[j]);
+      }
+  }}
+  console.log("Matched",match);
+
+  console.log("Matched",match.length);
