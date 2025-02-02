@@ -249,9 +249,13 @@ let products=[
     
     if(i.category==="men's clothing"){
         array.push(i)
-        count++
     }
 
   }
   console.log(array);
   
+   // Using Filter Method
+   let mens=products.filter((val)=>{
+    return val.category==="men's clothing" 
+  })
+  console.log(mens);
