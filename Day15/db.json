@@ -1,0 +1,170 @@
+{
+    "automobiles": [
+      {
+        "id": 1,
+        "type": "Sedan",
+        "brand": "Toyota",
+        "model": "Camry",
+        "year": 2024,
+        "fuelType": "Gasoline",
+        "engine": { "type": "Inline-4", "horsepower": 206, "torque": 186 },
+        "features": ["ABS", "Airbags", "Bluetooth", "Cruise Control"],
+        "price": 28000
+      },
+      {
+        "id": 2,
+        "type": "SUV",
+        "brand": "Honda",
+        "model": "CR-V",
+        "year": 2024,
+        "fuelType": "Hybrid",
+        "engine": { "type": "Inline-4 Hybrid", "horsepower": 204, "torque": 232 },
+        "features": ["AWD", "Lane Assist", "Apple CarPlay"],
+        "price": 35000
+      },
+      {
+        "id": 3,
+        "type": "Pickup Truck",
+        "brand": "Ford",
+        "model": "F-150",
+        "year": 2024,
+        "fuelType": "Gasoline",
+        "engine": { "type": "V8", "horsepower": 400, "torque": 410 },
+        "features": ["4WD", "Towing Package", "Touchscreen Display"],
+        "price": 48000
+      },
+      {
+        "id": 4,
+        "type": "Electric Car",
+        "brand": "Tesla",
+        "model": "Model S",
+        "year": 2024,
+        "fuelType": "Electric",
+        "battery": { "capacity_kWh": 100, "range_miles": 405 },
+        "features": ["Autopilot", "Touchscreen Display", "Wireless Charging"],
+        "price": 90000
+      },
+      {
+        "id": 5,
+        "type": "Convertible",
+        "brand": "BMW",
+        "model": "Z4",
+        "year": 2024,
+        "fuelType": "Gasoline",
+        "engine": { "type": "Inline-6", "horsepower": 382, "torque": 369 },
+        "features": ["Soft Top", "Sport Mode", "Heated Seats"],
+        "price": 65000
+      },
+      {
+        "id": 6,
+        "type": "Motorcycle",
+        "brand": "Harley-Davidson",
+        "model": "Street Glide",
+        "year": 2023,
+        "fuelType": "Gasoline",
+        "engine": { "type": "V-Twin", "horsepower": 100, "torque": 123 },
+        "features": ["ABS", "LED Lights", "Bluetooth Audio"],
+        "price": 22000
+      },
+      {
+        "id": 7,
+        "type": "Van",
+        "brand": "Mercedes-Benz",
+        "model": "Sprinter",
+        "year": 2024,
+        "fuelType": "Diesel",
+        "engine": { "type": "V6 Turbo", "horsepower": 188, "torque": 325 },
+        "features": ["High Roof", "Cargo Space", "Navigation"],
+        "price": 42000
+      },
+      {
+        "id": 8,
+        "type": "Hatchback",
+        "brand": "Volkswagen",
+        "model": "Golf GTI",
+        "year": 2024,
+        "fuelType": "Gasoline",
+        "engine": { "type": "Turbo Inline-4", "horsepower": 241, "torque": 273 },
+        "features": ["Sport Mode", "Apple CarPlay", "Adaptive Cruise Control"],
+        "price": 32000
+      },
+      {
+        "id": 9,
+        "type": "Coupe",
+        "brand": "Ford",
+        "model": "Mustang",
+        "year": 2024,
+        "fuelType": "Gasoline",
+        "engine": { "type": "V8", "horsepower": 450, "torque": 410 },
+        "features": ["Sport Mode", "Launch Control", "LED Headlights"],
+        "price": 55000
+      },
+      {
+        "id": 10,
+        "type": "Crossover",
+        "brand": "Nissan",
+        "model": "Rogue",
+        "year": 2024,
+        "fuelType": "Gasoline",
+        "engine": { "type": "Inline-3 Turbo", "horsepower": 201, "torque": 225 },
+        "features": ["AWD", "ProPilot Assist", "Panoramic Sunroof"],
+        "price": 33000
+      },
+      {
+        "id": 11,
+        "type": "Luxury SUV",
+        "brand": "Lexus",
+        "model": "RX 500h",
+        "year": 2024,
+        "fuelType": "Hybrid",
+        "engine": { "type": "Turbo Inline-4 Hybrid", "horsepower": 366, "torque": 406 },
+        "features": ["Leather Seats", "Adaptive Suspension", "Mark Levinson Audio"],
+        "price": 60000
+      },
+      {
+        "id": 12,
+        "type": "Electric Truck",
+        "brand": "Rivian",
+        "model": "R1T",
+        "year": 2024,
+        "fuelType": "Electric",
+        "battery": { "capacity_kWh": 135, "range_miles": 314 },
+        "features": ["Off-Road Mode", "Towing Package", "Digital Cockpit"],
+        "price": 75000
+      },
+      {
+        "id": 13,
+        "type": "Hybrid Sedan",
+        "brand": "Hyundai",
+        "model": "Sonata Hybrid",
+        "year": 2024,
+        "fuelType": "Hybrid",
+        "engine": { "type": "Inline-4 Hybrid", "horsepower": 192, "torque": 139 },
+        "features": ["Eco Mode", "Wireless Charging", "Blind Spot Monitor"],
+        "price": 31000
+      },
+      {
+        "id": 14,
+        "type": "Luxury Sedan",
+        "brand": "Mercedes-Benz",
+        "model": "S-Class",
+        "year": 2024,
+        "fuelType": "Gasoline",
+        "engine": { "type": "V8 Twin-Turbo", "horsepower": 496, "torque": 516 },
+        "features": ["Massage Seats", "Panoramic Roof", "Burmester Audio"],
+        "price": 115000
+      },
+      {
+        "id": 15,
+        "type": "Sport Motorcycle",
+        "brand": "Ducati",
+        "model": "Panigale V4",
+        "year": 2023,
+        "fuelType": "Gasoline",
+        "engine": { "type": "V4", "horsepower": 215, "torque": 91 },
+        "features": ["Quick Shifter", "Traction Control", "LED Headlights"],
+        "price": 30000
+      }
+    ]
+  }
+  
