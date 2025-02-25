@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form action="http://127.0.0.1:3000/" method="post"> -->
+
+    <form id="form">
+        <input type="text" name="username" id="name" placeholder="Enter your username">
+        <input type="text" name="password" id="password" placeholder="Enter your password">
+        <input type="text" name="email" id="email" placeholder="Enter your email">
+        <input type="text" name="role" id="role" placeholder="Enter your role">
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        var form = document.getElementById("form")
+        form.addEventListener("submit",(event)=>{
+            event.preventDefault()
+
+            var obj={
+                username:event.target[0].value,
+                password:event.target[1].value,
+                email:event.target[2].value,
+                role:event.target[3].value
+            }
+            console.log(obj);
+            
+            fetch("http://localhost:3000",{
+                method:"post",
+                body:JSON.stringify(obj)
+            }).then((val)=>{
+                return val.json()
+            }).then((val)=>{
+                console.log(val)
+            })
+        })
+    </script>
+</body>
+</html>
