@@ -1,6 +1,6 @@
 let express=require('express')
 let connection=require('./db.js')
-let jwt=require('jsonwebtoken')
+let jwt=require('jsonwebtoken') 
 
 let app=express()
 app.use(express.json())
