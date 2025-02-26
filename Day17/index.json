@@ -1,0 +1,64 @@
+{
+    "workout_plan": [
+      {
+        "day": "Monday",
+        "exercise": "Chest & Triceps",
+        "workouts": [
+          { "name": "Bench Press", "sets": 4, "reps": 10 },
+          { "name": "Incline Dumbbell Press", "sets": 3, "reps": 12 },
+          { "name": "Tricep Dips", "sets": 3, "reps": 12 }
+        ]
+      },
+      {
+        "day": "Tuesday",
+        "exercise": "Back & Biceps",
+        "workouts": [
+          { "name": "Deadlifts", "sets": 4, "reps": 8 },
+          { "name": "Pull-Ups", "sets": 3, "reps": 12 },
+          { "name": "Bicep Curls", "sets": 3, "reps": 12 }
+        ]
+      },
+      {
+        "day": "Wednesday",
+        "exercise": "Legs & Abs",
+        "workouts": [
+          { "name": "Squats", "sets": 4, "reps": 10 },
+          { "name": "Leg Press", "sets": 3, "reps": 12 },
+          { "name": "Plank", "sets": 3, "time": "60s" }
+        ]
+      },
+      {
+        "day": "Thursday",
+        "exercise": "Shoulders & Traps",
+        "workouts": [
+          { "name": "Overhead Press", "sets": 4, "reps": 10 },
+          { "name": "Lateral Raises", "sets": 3, "reps": 12 },
+          { "name": "Shrugs", "sets": 3, "reps": 15 }
+        ]
+      },
+      {
+        "day": "Friday",
+        "exercise": "Full Body",
+        "workouts": [
+          { "name": "Deadlifts", "sets": 3, "reps": 8 },
+          { "name": "Pull-Ups", "sets": 3, "reps": 12 },
+          { "name": "Push-Ups", "sets": 3, "reps": 20 }
+        ]
+      },
+      {
+        "day": "Saturday",
+        "exercise": "Cardio & Core",
+        "workouts": [
+          { "name": "Running", "duration": "30min" },
+          { "name": "Cycling", "duration": "20min" },
+          { "name": "Sit-Ups", "sets": 3, "reps": 20 }
+        ]
+      },
+      {
+        "day": "Sunday",
+        "exercise": "Rest Day",
+        "workouts": []
+      }
+    ]
+  }
+  
