@@ -1,0 +1,28 @@
+why should we use database?
+mysql
+
+to connect node to database we need libraries (mysql2)
+
+in terminal we need to run these commands
+
+npm init -y
+
+npm install express mysql2 nodemon
+
+
+
+
+
+
+
+
+
+
+
+in your app.js
+
+const mysql = require('mysql2/promise');
+
+const pool = mysql.createPool({ pool
+
+without database limited access
