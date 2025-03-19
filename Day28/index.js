@@ -20,7 +20,7 @@ app.post('/upload',upload.single('file'),(req,res)=>{
     }else{
         // res.send('File uploaded')
         let name=req.body.name
-        let filename=req.file.filename
+        let filename=req.file.filename 
         // console.log(filename);
         
         let filepath=req.file.path
